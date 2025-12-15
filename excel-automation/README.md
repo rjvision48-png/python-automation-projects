@@ -1,19 +1,16 @@
-# Excel Automation Script
+## What this folder contains
 
-This Python script helps with repetitive Excel work.
+This folder has small Python scripts that help with Excel and CSV files.  
+All scripts are for office work like cleaning data, joining columns and making simple reports.
 
-It can update many rows or columns in one go, apply simple formulas, or clean up data without opening every file by hand.
+- `csv_clean.py` – cleans messy CSV/Excel files  
+  Removes empty rows, trims extra spaces and fixes basic formatting so the file is ready to use.
 
-## What it can do
+- `column_merge.py` – joins multiple columns into one  
+  Useful when first name, last name or address are in different columns and you want them together.
 
-- Read data from Excel files
-- Apply basic calculations or text changes
-- Clean up columns (remove extra spaces, fix formats)
-- Save the updated file as a new Excel file
+- `excel_automation.py` – does simple bulk updates in Excel  
+  Can apply the same change (for example add text, update a column) to many rows at once.
 
-## How to use
-
-1. Place your Excel file in the same folder as this script.  
-2. Open the script and update the file path or sheet name if needed.  
-3. Run the script with Python.  
-4. Check the output Excel file that is created or updated.
+- `report_generator.py` – creates a basic summary report from your data  
+  Reads your data and saves a small summary (totals, counts or simple stats) into a new file.
