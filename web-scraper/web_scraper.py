@@ -1,2 +1,10 @@
-# Web Scraper
-# Collects simple data from web pages and saves it to CSV.
+import requests
+from bs4 import BeautifulSoup
+
+url = input("Enter URL: ")
+res = requests.get(url)
+
+soup = BeautifulSoup(res.text, "html.parser")
+
+for link in soup.find_all("a"):
+    print(link.get_text(), "-", link.get("href"))
