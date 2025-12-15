@@ -1,33 +1,13 @@
-# File Sort & Duplicate Cleaner
+## What this folder contains
 
-This is a small Python script that cleans up messy folders.  
-It organises files into simple folders and removes duplicate files to save space.
+This folder has tools for cleaning and organising files on your computer.  
+They are useful for messy Downloads, Desktop or project folders.
 
-## What problem it solves
+- `file_sort_duplicate.py` – sorts files into folders and finds duplicates  
+  Groups files by type (documents, images, videos, etc.) and lists duplicate files that you can remove.
 
-- Downloads or Desktop folder becomes full of random files  
-- Hard to find important documents  
-- Same file is saved many times and storage gets wasted
+- `bulk_rename.py` – renames many files in one go  
+  Changes file names using a pattern (for example add date, add prefix, fix spelling) instead of renaming by hand.
 
-## What this script does
-
-- Sorts files into folders (Documents, Images, Videos, Others etc.)  
-- Finds duplicate files and removes them (or moves to a separate folder)  
-- Works on any folder you choose
-
-## How to use it
-
-1. Make sure **Python 3** is installed.  
-2. Download this project (Code → Download ZIP) and extract it.  
-3. Open `file_sort_duplicate_cleaner.py`.  
-4. Change the folder path in the script to the folder you want to clean.  
-5. Run:
-
-6. Check your folder – files will be sorted and duplicates will be reduced.
-
-## Who this is for
-
-- Non‑technical users with a messy Downloads/Desktop  
-- Students and freelancers who want clean folders  
-- Small businesses that want basic file organisation without expensive software
-- I can also help set it up for you and customise it for your folders.
+- `folder_organiser.py` – organises files into neat folders automatically  
+  Moves files into simple folders so it is easier to find things later.
