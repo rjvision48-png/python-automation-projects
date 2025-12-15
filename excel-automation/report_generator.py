@@ -1,2 +1,5 @@
-# Report Generator - creates a simple summary report from data.
-print("Report Generator - coming soon")
+import pandas as pd
+
+df = pd.read_excel("data.xlsx")
+summary = df.describe()
+summary.to_excel("report.xlsx")
